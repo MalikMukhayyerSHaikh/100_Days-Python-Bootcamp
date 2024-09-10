@@ -1,0 +1,223 @@
+#--------------- DAY-1 -------------
+
+# Introduction to Output in Python
+
+# In this session, we will learn how to display information on the console using Python.
+# Python provides a built-in function called `print()` for this purpose.
+
+# Example:
+print("Hello, World!")
+
+# Explanation:
+# The `print` function is used to output text to the console.
+# Any sequence of characters enclosed within double quotes (" ") is known as a *string*.
+# Strings are one of the most common data types in Python and allow us to work with textual data.
+
+# Output:
+# The result of the above code will be:
+# Hello, World!
+
+# The `print()` function is a fundamental tool in Python programming.
+# It allows us to communicate with users by displaying messages, results, or any other output on the console.
+
+#--------------- Newline Character (\n) in Python ---------------
+
+# In Python, the `\n` character is used to insert a newline in a string.
+# This special character tells Python to move the output cursor to the next line.
+
+# Example:
+print("Hello,\nWorld!")  # Using \n to add a new line between Hello and World
+
+# Explanation:
+# The `\n` in the string instructs Python to break the line after "Hello,"
+# and start a new line before printing "World!".
+
+# Output:
+# The result will be:
+# Hello,
+# World!
+
+#--------------- String Concatenation in Python ---------------
+
+# In Python, you can concatenate (join) two or more strings using the `+` operator.
+
+# Example:
+string1 = "Hello"
+string2 = "World"
+result = string1 + " " + string2  # Adding a space between the two strings
+
+print(result)  # Output: Hello World
+
+#--------------- Indentation Error Example in Python ---------------
+
+# In Python, consistent indentation is required.
+# If a line of code has unnecessary indentation, Python will raise an IndentationError.
+
+# Example:
+print("Hello!")  # This line is properly indented.
+   print("World!")  # This line has extra indentation, causing an error.
+
+# Output:
+# IndentationError: unexpected indent
+
+# Explanation:
+# The first print statement is correct.
+# The second print statement has extra spaces at the beginning, which Python does not expect,
+# leading to an IndentationError.
+
+#--------------- What is Debugging? ---------------
+
+# Debugging is the process of finding and fixing errors (bugs) in a program.
+# When a program doesn't work as expected, developers check the code to identify what went wrong.
+# Once the problem is found, they correct it to ensure the program runs properly and without issues.
+
+#--------------- Input Function in Python ---------------
+
+# The input() function is used to take input from the user.
+
+# Example:
+# name = input("Enter your name: ")  # The user types their name here
+# print("Hello, " + name + "!")  # Greets the user with the input name
+
+# Explanation:
+# The input() function displays a message ("Enter your name: ") and waits for the user to type something.
+# Whatever the user types is stored in the variable 'name'.
+# The print() function then greets the user by combining "Hello, " with the user's input (name).
+
+# Output (example user input "John"):
+# Enter your name: John
+# Hello, John!
+
+# print("Hello" + input("What is your Name?"))
+# Output:
+# What is your Name?John
+# Hello John
+
+#--------------- Comments in Python ---------------
+
+# In Python, comments are used to explain the code and make it more understandable.
+# They are ignored by the Python interpreter and don't affect the program's execution.
+
+# Types of Comments:
+
+# 1. Single-line comment: Uses the # symbol.
+# 2. Multi-line comment: Uses triple quotes (''' or """) to span multiple lines.
+#    (Technically, these are multi-line strings but often used as comments.)
+
+# Example of Comments in Python:
+
+# This is a single-line comment. It explains the line of code below.
+# print("Hello, World!")  # You can also add a comment after a line of code.
+
+'''
+This is a multi-line comment.
+It can span multiple lines.
+Used to explain larger sections of code.
+'''
+# print("Comments are useful!")  # Another example with a comment at the end of the line.
+
+# Explanation:
+# - Single-line comments start with # and are used to annotate specific lines of code.
+# - Multi-line comments are written between triple quotes and typically used for larger explanations.
+
+# Output:
+# Hello, World!
+# Comments are useful!
+
+#--------------- Variables in Python ---------------
+
+# In Python, variables are used to store data values.
+# A variable acts like a container for holding information that can be used and manipulated in the program.
+
+# You can assign any type of data (like numbers, strings, lists, etc.) to a variable,
+# and Python automatically handles the type of the variable.
+
+# Example:
+# x = 5  # x is a variable that holds the integer value 5
+# name = "Alice"  # name is a variable that holds the string "Alice"
+
+# print(x)  # Output: 5
+# print(name)  # Output: Alice
+
+# Explanation:
+# - Variables are created when you assign a value to them, like x = 5.
+# - Variables don't need to be declared with any specific data type, as Python is dynamically typed.
+# - You can use the variable later in the program to reference the stored value.
+
+# Output:
+# 5
+# Alice
+
+#--------------- Variable Overwriting in Python ---------------
+
+# In Python, when a variable is assigned a new value, it overwrites the previous value.
+
+# Example:
+# x = 10  # x is initially assigned the value 10
+# print(x)  # Output: 10
+
+# x = 25  # x is overwritten with the new value 25
+# print(x)  # Output: 25
+
+# Explanation:
+# - Initially, the variable x holds the value 10.
+# - When we assign x = 25, the previous value (10) is replaced, and x now holds 25.
+
+# Output:
+# 10
+# 25
+
+#--------------- Length of String in Python ---------------
+
+# The len() function is used to find the length of a string.
+
+# Example:
+# string = "Hello, World!"  # A string with 13 characters
+# length = len(string)  # Finding the length of the string
+
+# print(length)  # Output: 13
+
+# Explanation:
+# - The len() function counts the total number of characters in the string, including spaces and punctuation.
+# - In this case, the string "Hello, World!" has 13 characters.
+
+# Output:
+# 13
+
+# print(len(input("What is your name?")))
+# Output:
+# What is your name?Malik
+# 5
+
+#--------------- Variable Naming in Python ---------------
+
+# Variable names in Python must follow certain rules to work correctly.
+
+# Rules for Naming Variables:
+# 1. A variable name must start with a letter (a-z, A-Z) or an underscore (_).
+# 2. The rest of the variable name can contain letters, numbers, or underscores (e.g., my_var1).
+# 3. Variable names are case-sensitive (age, Age, and AGE are different variables).
+# 4. You cannot use Python keywords (like if, else, for, etc.) as variable names.
+
+# Example:
+
+# Valid variable names:
+# my_variable = 10
+# _age = 25
+# Name1 = "Alice"
+
+# Invalid variable names (will raise SyntaxError):
+# 1age = 30  # Starts with a number (invalid)
+# my-var = 50  # Contains a hyphen (invalid)
+# for = 20  # 'for' is a Python keyword (invalid)
+
+# Explanation:
+# - Valid variable names follow the rules of starting with a letter or underscore and can contain numbers or underscores after the first character.
+# - Invalid names break these rules or use reserved keywords.
+
+
+
+
+
+
+
